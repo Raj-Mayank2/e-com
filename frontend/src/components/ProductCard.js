@@ -35,7 +35,7 @@ const ProductCard = (props) => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete("http://localhost:5000/delete/" + id);
+      const response = await axios.delete("https://e-com-w8y7.onrender.com/delete/" + id);
       console.log(response.data);
       if (response.data === "Product deleted!") {
         props.getProduct();

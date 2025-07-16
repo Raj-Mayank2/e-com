@@ -27,7 +27,7 @@ const AddProduct = () => {
   const handleSave = async () => {
     console.log(productData);
     try {
-      const response = await axios.post("http://localhost:5000/create", {
+      const response = await axios.post("https://e-com-w8y7.onrender.com/create", {
         data: productData,
       });
       if (response.data === "Product saved to the database!") {

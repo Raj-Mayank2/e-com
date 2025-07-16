@@ -33,7 +33,7 @@ const OrdersPage = () => {
   const getOrders = async () => {
     const userId = localStorage.getItem("userId");
     try {
-      const response = await axios.get("http://localhost:5000/order/" + userId);
+      const response = await axios.get("https://e-com-w8y7.onrender.com/order/" + userId);
       setOrders(response.data);
       console.log(response.data);
     } catch (e) {

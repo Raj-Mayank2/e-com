@@ -136,7 +136,7 @@ const CartPage = () => {
       createdDate: new Date(),
     };
     try {
-      const response = await axios.post("http://localhost:5000/order/create", {
+      const response = await axios.post("https://e-com-w8y7.onrender.com/order/create", {
         data: order,
       });
       console.log(response.data);

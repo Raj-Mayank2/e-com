@@ -25,7 +25,7 @@ const RegisterForm = (props) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://e-com-w8y7.onrender.com/users/register",
         {
           data: userData,
         }

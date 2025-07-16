@@ -56,7 +56,7 @@ const HomePage = () => {
 
   const getProduct = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/product");
+      const response = await axios.get("https://e-com-w8y7.onrender.com/product");
       setProductList(response.data);
       setOriginalData(response.data);
 
